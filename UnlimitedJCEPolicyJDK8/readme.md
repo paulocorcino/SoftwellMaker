@@ -23,3 +23,6 @@ Go to your JDK installation directory, and you should find your current JCE jars
 Backup the JCE jars to a different location.
 Remove the current JCE jars and replace it with the JCE jars which you just downloaded.
 Restart your Java/Runtime. If you are using Studio to run your application, you may need to restart your Studio so that the JVM will pick up the new JCE jars.
+
+At same folder edit file java.security and locate parameter ``jdk.tls.disabledAlgorithms`` remove their attribute the values ``TLSv1, TLSv1.1``.
+
